@@ -52,4 +52,14 @@ describe 'methods-final' do
         end
     end
 
+    describe 'two_as_one?' do
+        it 'possible to get third int' do
+            two_as_one?(1, 2, 3).must_equal(true)
+        end
+
+        it 'not possible to get third int' do
+            two_as_one?(1, 2, 4).must_equal(false)
+        end
+    end
+
 end
