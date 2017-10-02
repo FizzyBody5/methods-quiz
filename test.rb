@@ -38,4 +38,18 @@ describe 'methods-final' do
         end
     end
 
+    describe 'closer_to' do
+        it 'one is close to target' do
+            closer_to(10, 9, 8).must_equal(9)
+        end
+
+        it 'both are close to target' do
+            closer_to(10, 9, 11).must_equal(0)
+        end
+
+        it 'same as target' do
+            closer_to(10 , 10, 9).must_equal(10)
+        end
+    end
+
 end
