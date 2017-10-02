@@ -8,7 +8,13 @@ def has_teen?(a, b, c)
     end
 end
 # TODO - write not_string
-
+def not_string(str)
+    if str[0..2].downcase == "not"
+        return str.downcase
+    else
+        return "not" + str.downcase
+    end
+end
 # TODO - write icy_hot?
 
 # TODO - write closer_to
