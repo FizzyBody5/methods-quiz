@@ -28,5 +28,14 @@ describe 'methods-final' do
         end
     end
 
+    describe 'icy_hot?' do
+        it 'less than zero and greater than 100' do
+            icy_hot?(-1, 101).must_equal(true)
+        end
+
+        it 'not icy or hot' do
+            icy_hot?(10, 90).must_equal(false)
+        end
+    end
 
 end
