@@ -60,6 +60,10 @@ describe 'methods-final' do
         it 'not possible to get third int' do
             two_as_one?(1, 2, 4).must_equal(false)
         end
+
+        it 'possible to get third int reversed' do
+            two_as_one?(3, 2, 1).must_equal(true)
+        end
     end
 
 end
