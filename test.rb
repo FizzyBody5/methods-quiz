@@ -36,6 +36,9 @@ describe 'methods-final' do
         it 'not icy or hot' do
             icy_hot?(10, 90).must_equal(false)
         end
+        it 'hdiohfo' do
+            icy_hot?(101, -1).must_equal(true)
+        end
     end
 
     describe 'closer_to' do
